@@ -14,8 +14,8 @@ Asylum is a command-line tool designed to sanitize and organize file and folder 
 - **Action Execution Layer:** Applies cleaning or folderizing logic to files and folders using visitor patterns.
 
 For detailed explanations, see the `Documentation/` folder:
-- `01_command_line_parsing.md`
-- `02_behavior_configuration.md`
+- `01_command_line_parsing.md` https://github.com/microuser/asylum/blob/ca02111c8b8d6e62d0c4dab331c5b3f375aabccf/docs/01_command_line_parsing.md
+- `02_behavior_configuration.md` docs/02_behavior_configuration.md
 - `03_validation_layer.md`
 - `04_processing_dispatch.md`
 - `05_action_execution.md`
