@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'Asylum'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=asylum",
+                    //"--package=Asylum"
+                ],
+                "filter": {
+                    "name": "asylum",
+                    "kind": "bin"
+                }
+            },
+            "args": ["-vv", "--folderize",
+                "<place your path here>"
+                ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'Asylum'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=asylum",
+                    //"--package=Asylum"
+                ],
+                "filter": {
+                    "name": "asylum",
+                    "kind": "bin"
+                }
+            },
+            "args": ["-vv", "--folderize" ,"<Place your path here>"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
